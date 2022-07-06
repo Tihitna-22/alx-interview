@@ -14,7 +14,6 @@ try:
             if (stat_code in possible_stat_code.keys()):
                 possible_stat_code[stat_code] += 1
 
-            # print(elements[-2])
             # print(elements)
             filesize = filesize+(int(elements[-1]))
             if (count == 10):
