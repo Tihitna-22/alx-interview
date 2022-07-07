@@ -31,7 +31,7 @@ except KeyboardInterrupt:
             print('{}: {}'.format(key, value))
     raise
 
-finally:
+else:
     print('File size: {}'.format(filesize))
     for key, value in sorted(possible_stat_code.items()):
         if value:
