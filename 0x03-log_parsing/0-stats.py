@@ -24,7 +24,11 @@ try:
                         print('{}: {}'.format(key, value))
                 count = 0
             count = count+1
-except KeyboardInterrupt as err:
+except KeyboardInterrupt:
+    print('File size: {}'.format(filesize))
+    for key, value in sorted(possible_stat_code.items()):
+        if value:
+            print('{}: {}'.format(key, value))
     raise
 
 finally:
