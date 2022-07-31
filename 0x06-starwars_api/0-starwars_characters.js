@@ -16,7 +16,7 @@ request(url + id, async function (err, res, body) {
             request(li, function (err, res, body) {
                 if (err) return console.error(err);
 
-              ]
+              
                 console.log(JSON.parse(body).name);
                 resolve();
             });
