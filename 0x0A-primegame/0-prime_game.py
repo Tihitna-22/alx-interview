@@ -29,11 +29,11 @@ def isWinner(x, nums):
             maria = maria+1
 
     if(maria > ben):
-        return('maria wins')
+        return('Winner: Maria')
     elif(maria < ben):
-        return('ben wins')
+        return('Winner: Ben')
     else:
-        return (None)
+        return ('Winner: None')
 
 
 isWinner(5, [2, 5, 1, 4, 3])
