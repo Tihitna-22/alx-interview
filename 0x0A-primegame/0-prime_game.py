@@ -9,11 +9,12 @@ def isWinner(x, nums):
     # where x is the number of rounds and nums is an array of n
     # Return: name of the player that won the most rounds
     # If the winner cannot be determined, return None
-    primes = []
+
     ben = 0
     maria = 0
     for a in nums:
-        # print (nums)
+        print(a)
+        primes = []
         for i in range(2, a+1):
             for j in range(2, i):
                 if i % j == 0:
@@ -23,12 +24,16 @@ def isWinner(x, nums):
         # print(primes)
         if(len(primes) % 2 == 0):
             ben = ben + 1
+
         else:
             maria = maria+1
+
     if(maria > ben):
-        print('maria wins')
+        return('maria wins')
+    elif(maria < ben):
+        return('ben wins')
     else:
-        print('ben wins')
+        return (None)
 
 
 isWinner(5, [2, 5, 1, 4, 3])
